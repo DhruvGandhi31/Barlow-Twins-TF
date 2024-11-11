@@ -29,7 +29,7 @@ from tensorflow.keras.layers import (
     Activation,
 )
 from tensorflow.keras.layers import AveragePooling2D, GlobalAvgPool2D, Dropout
-from tensorflow.keras.layers import experimental
+from tensorflow.keras.layers import *
 from tensorflow.keras.regularizers import l2
 
 WEIGHT_DECAY = 5e-4
