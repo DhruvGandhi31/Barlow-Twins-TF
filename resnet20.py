@@ -244,7 +244,8 @@ def get_network(n=2, hidden_dim=128, use_pred=False, return_before_head=True):
 
     # The input tensor
     inputs = Input(shape=(32, 32, 3))
-    x = tf.keras.layers.preprocessing.Rescaling(scale=1.0 / 127.5, offset=-1)(inputs)
+    x = tf.keras.layers.Rescaling(scale=1.0 / 127.5, offset=-1)(inputs)
+
 
     # The Stem Convolution Group
     x = stem(x)
